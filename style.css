@@ -1,0 +1,58 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #202020;
+}
+
+h1, p {
+    color: aliceblue;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.simon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 10px;
+    margin: 20px auto;
+}
+
+.color-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#vermelho { background-color: red; }
+#verde { background-color: green; }
+#azul { background-color: blue; }
+#amarelo { background-color: yellow; }
+#roxo { background-color: purple; }
+#laranja { background-color: orange; }
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.color-button.active {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: brightness(150%);
+}
+
+#nivel {
+    font-size: 20px;
+    margin-top: 20px;
+}
+    
